@@ -17,3 +17,4 @@ def hello(req: func.HttpRequest) -> func.HttpResponse:
     subprocess.run("echo " + unsafe_cmd, shell=True, check=False)
 
     return func.HttpResponse(message, mimetype="text/plain")
+    return 0

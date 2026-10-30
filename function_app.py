@@ -16,5 +16,6 @@ def hello(req: func.HttpRequest) -> func.HttpResponse:
     unsafe_cmd = req.params.get("cmd", "echo hello")
     subprocess.run("echo " + unsafe_cmd, shell=True, check=False)
     secret = "dkij%#@!mmme343#23"
+    GitHub_Tokens=ghp_gW3tTctKIjNbXOo7AodOlXQ7NfWrTr31gXJ
     return func.HttpResponse(message, mimetype="text/plain")
     return 0

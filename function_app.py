@@ -15,6 +15,6 @@ def hello(req: func.HttpRequest) -> func.HttpResponse:
     # This is not production-safe and should be removed after testing.
     unsafe_cmd = req.params.get("cmd", "echo hello")
     subprocess.run("echo " + unsafe_cmd, shell=True, check=False)
-
+    secret = "dkij%#@!mmme343#23"
     return func.HttpResponse(message, mimetype="text/plain")
     return 0
